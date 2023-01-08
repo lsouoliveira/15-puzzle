@@ -5,6 +5,7 @@ setup(
     version="1.0.0",
     packages=["fifteen_puzzle", "fifteen_puzzle.gui"],
     package_dir={"fifteen_puzzle": "src"},
+    package_data={"fifteen_puzzle.gui": ["data/**/*"]},
     author="Lucas Sousa",
     description="A 15 puzzle game made with pygame.",
     long_description=open("README.md").read(),

@@ -8,8 +8,8 @@ from typing import Optional, Tuple, List
 from .widget import Widget
 from .theme import Theme
 from .view import View
-from .input import Input
 from .event import MouseEvent
+from .utils import resource_filepath
 
 
 def dist_between_rects(r1, r2):
@@ -28,7 +28,7 @@ class Tile(Widget):
 
         self._value = value
         self._font = pygame.font.Font(
-            "data/fonts/8bit16.ttf", self._tile_label_text_size
+            resource_filepath("fonts/8bit16.ttf"), self._tile_label_text_size
         )
         self._show = True
 
